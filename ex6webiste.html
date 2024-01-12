@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.1.24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .poppins-extralight {
+
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+        *{
+            margin: 0;
+        }
+
+        .main {
+            margin: 0px 50px 0px 150px;
+        }
+
+        .logo img {
+            width: 200px;
+            display: flex;
+            justify-content: left;
+        }
+
+        nav {
+            display: flex;
+            gap: 450px;
+            justify-content: space-around;
+            padding: 5px 155px 83px 15px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 24px;
+
+        }
+
+        ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(84, 83, 83);
+            font-size: 18px;
+        }
+
+        .head {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 50px;
+            text-align: center;
+            padding-right: 100px;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 27px;
+            padding: 0px 150px 10px 150px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 85px;
+
+        }
+
+        button {
+            background-color: rgb(80, 195, 218);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .dusra {
+            display: flex;
+            gap: 15px;
+        }
+
+        .dusra img {
+            padding-left: 150px;
+            padding-bottom: 75px;
+        }
+
+        .span span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: black;
+            font-size: 25px;
+            padding-left: 5px;
+            letter-spacing: 0px;
+        }
+
+        .span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 450;
+            font-size: 15px;
+            color: rgb(82, 81, 81);
+            letter-spacing: 1px;
+        }
+
+        .main2 {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-left: 89px;
+            padding-right: 90px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .box {
+            width: 350px;
+            height: 150px;
+            border: 1px solid;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(253, 251, 251, 0.944);
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+            padding: 17px;
+        }
+
+        .name {
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600 ;
+        }
+
+        .name2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+            font-weight: 400;
+            padding-bottom: 25px;
+        }
+
+        .name3 {
+            color: rgba(253, 251, 251, 0.944);
+        }
+
+        .db2 {
+            display: flex;
+            gap: 13px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .db2 .green {
+            background-color: rgba(65, 170, 63, 0.944);
+            padding: 4%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+
+        .db2 .Blues {
+            background-color: rgb(75, 172, 198);
+            padding: 4%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+
+        .dujafooter {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: 80vh;
+            background-color: rgb(26, 38, 38);
+            color: white;
+        }
+        .dujafooter p{
+            font-size: 20px;
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 25px;
+            font-size: 35px;
+        }
+        .para{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: left;
+            padding-left: 320px;
+            padding-top: 125px;
+            font-size: 15px;
+
+            
+        }
+        h3{
+            font-weight: 400;
+            gap: 15px;
+            font-size: 20px;
+            padding-bottom: 25px;
+        }
+        footer{
+           /* display: flex; */
+           /* align-content:space-around;  */
+           text-align: right;
+           margin: 15px 150px 0px 150px;
+           font-size: 25px;
+        }
+        h4{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 35px;
+        }
+        .last{
+            font-size: 45px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .last button{
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="Screenshot 2024-01-11 165514.png" alt="" srcset="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About us</li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" width="40vw"
+                            height="40vh" srcset=""></li>
+                </ul>
+            </div>
+
+
+        </nav>
+        <div class="head2">
+
+            <div class="head">
+                Download <strong>UltraEdit</strong> for Windows
+            </div>
+            <p>
+                Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                text
+                editor.
+            </p>
+            <div class="center">
+
+                <button><b>DOWNLOAD MAC OR LINUX VERSION</b>
+            </div>
+            </button>
+        </div>
+        <div class="dusra">
+            <img src="Screenshot 2024-01-11 013541.png" width="70px" height="70px" alt="">
+            <!-- <span class="bold">
+                Download UltraEdit
+            </span>
+            <span class="normal">
+                v2023.2(released 12/15/2023) | Hotfix
+            </span> -->
+            <div class="span">
+                <span>Download UltraEdit</span> v2023.2(released 12/15/2023) | Hotfix
+            </div>
+        </div>
+        <div class="main2">
+            <div class="box">
+                <div class="name">English</div>
+                <div class="name3">English</div>
+
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">Deutsch</div>
+                <div class="name2">German</div>
+
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">Italiano</div>
+                <div class="name2">Italian</div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">Español</div>
+                <div class="name2">Spanich</div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">français</div>
+                <div class="name2">French</div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">Português brasileiro</div>
+                <div class="name2">Brazilian Portuguese
+                </div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">日本</div>
+                <div class="name2">Japanese</div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">한국어</div>
+                <div class="name2">Korean</div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">中国</div>
+                <div class="name2">Chinese</div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">中國</div>
+                <div class="name2">Traditional Chinese</div>
+                <div class="db2">
+                    <button class="Blues">Download 32-bit</button>
+                    <button class="green">Download 64-bit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dujafooter">
+        <h2><strong>Join the UltraEdit newsletter</strong></h2>
+        <p class="white">
+            Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on
+            UltraEdit.
+        </p>
+        <div class="para">
+            <h3>EXE or MSI?</h3>
+            The EXE builds of our products are the preferred download for most of our users, running Windows
+            8.1 and later.
+            <br>
+            <br>
+            We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). Get
+            the UltraEdit MSI installer.
+            <br>
+            <br>
+            <h3>Free trial period</h3>
+            This application comes with a free, fully functional 30 day trial period. After the trial period
+            expires, you must purchase a license to continue using it.
+        </div>
+    </div>
+    <footer>
+            <h4>Subscribe to Newsletter</h4>
+            Get the latest news on new releases, event, and developments.
+            <div class="last">
+                <input type="email" placeholder="Enter email address..">
+                <br>
+                <button>Subscribe</button>
+            </div>
+    </footer>
+    
+
+
+
+</body>
+
+</html>
